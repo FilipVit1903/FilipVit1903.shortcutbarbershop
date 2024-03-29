@@ -1,0 +1,86 @@
+h1 {
+  font-size: 64px !important;
+  text-transform: uppercase;
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 400 !important;
+}
+@media (max-width: 767px) {
+  h1 {
+    font-size: 48px !important;
+  }
+}
+
+h2 {
+  font-size: 48px !important;
+  text-transform: uppercase;
+  font-family: "Space Grotesk", sans-serif;
+}
+
+h3 {
+  font-size: 24px;
+  text-transform: uppercase;
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 600;
+}
+
+p {
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 300;
+  font-size: 24px;
+}
+
+.container {
+  max-width: 1440px !important;
+}
+
+@media (min-width: 1024px) {
+  section {
+    margin-bottom: 5rem;
+  }
+}
+@media (max-width: 1023px) {
+  section {
+    margin-bottom: 3rem;
+  }
+}
+
+html {
+  max-width: 100%;
+  width: 100%;
+}
+
+.btn-gold {
+  background-color: #dba740;
+  padding: 0.5rem 0.8rem;
+  border: none;
+  transition: all 0.3s;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.btn-gold:hover {
+  background-color: #b0842c;
+}
+.btn-gold:hover a {
+  color: white !important;
+}
+.btn-gold a {
+  color: #1f2020 !important;
+}
+
+.btn-white {
+  background-color: white;
+  padding: 0.5rem 0.8rem;
+  border: none;
+  transition: all 0.3s;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.btn-white:hover {
+  background-color: #292a2a;
+}
+.btn-white:hover a {
+  color: white !important;
+}
+.btn-white a {
+  color: #1f2020 !important;
+}/*# sourceMappingURL=findUs.css.map */

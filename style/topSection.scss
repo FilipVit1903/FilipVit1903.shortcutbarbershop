@@ -1,0 +1,89 @@
+@import "_typography_layout";
+
+.topSection {
+	width: 100vw;
+	height: 100vh;
+	background-image: url(/img/top_photo.jpg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	position: relative;
+
+	&::before {
+		width: 100%;
+		height: 100%;
+		background-color: rgba($color: #000000, $alpha: 0.75);
+		content: "";
+		position: absolute;
+	}
+
+	.navbar {
+		padding-top: 3rem;
+
+		&-nav {
+			align-items: center;
+			gap: 3rem;
+
+			@media (max-width: 767px) {
+				margin-top: 3rem;
+			}
+		}
+
+		&-toggler {
+			border: white solid 1px !important;
+			&-icon {
+				background-image: url(../img/hamburger.svg) !important;
+			}
+		}
+
+		.navbar-collapse {
+			@media (min-width: 769px) {
+				display: flex;
+			}
+			align-items: center;
+			width: 100%;
+			justify-content: space-around;
+
+			.nav-link {
+				color: white;
+				font-family: $space-grotesk;
+				text-transform: uppercase;
+				font-size: 24px;
+				font-weight: 500;
+			}
+		}
+	}
+
+	img {
+		width: 325px;
+		width: 100%;
+
+		@media (max-width: 767px) {
+			width: 200px !important;
+		}
+	}
+
+	.topText {
+		z-index: 1 !important;
+		position: relative;
+		text-align: center;
+		margin-top: 15%;
+
+		@media (max-width: 767px) {
+			margin-top: 40%;
+		}
+
+		h1 {
+			color: white;
+			margin-bottom: 2rem;
+		}
+
+		button a {
+			font-family: $space-grotesk;
+			text-transform: uppercase;
+			font-size: 24px;
+			font-weight: 500;
+			padding: 0.5rem 0.8rem;
+		}
+	}
+}

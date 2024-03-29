@@ -1,0 +1,79 @@
+@import "_typography_layout";
+
+.sluzby {
+	position: relative;
+
+	&::before {
+		content: "";
+		max-width: 230px;
+		width: 100%;
+		max-height: 250px;
+		height: 100%;
+		background-image: url(../img/nuzky.svg);
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+		transform: rotate(90deg);
+		position: absolute;
+		top: 0;
+		left: -2rem;
+		opacity: 0.3;
+	}
+
+	h2 {
+		text-align: center;
+		margin-bottom: 3rem;
+	}
+
+	.col {
+		text-align: center;
+		margin-bottom: 4rem;
+	}
+
+	.box {
+		width: 270px;
+		height: 270px;
+		background-color: $brand-black;
+		position: relative;
+		margin: auto;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-bottom: 1rem;
+
+		&::before {
+			content: "";
+			position: absolute;
+			width: 62px;
+			height: 62px;
+			background-image: url(../img/triangle.svg);
+			background-position: center;
+			background-size: cover;
+			background-repeat: no-repeat;
+			bottom: 0;
+			right: 0;
+		}
+	}
+
+	.anotation {
+		max-width: 270px;
+		margin: auto;
+
+		.price {
+			font-size: 34px;
+			font-family: $lexend;
+			font-weight: 500;
+			margin-bottom: 0.5rem;
+		}
+
+		.service {
+			margin-bottom: 0.5rem;
+		}
+
+		.description {
+			font-family: $lexend;
+			font-size: 20px;
+			font-weight: 300;
+		}
+	}
+}

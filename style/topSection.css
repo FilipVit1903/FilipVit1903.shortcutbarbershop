@@ -1,0 +1,169 @@
+h1 {
+  font-size: 64px !important;
+  text-transform: uppercase;
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 400 !important;
+}
+@media (max-width: 767px) {
+  h1 {
+    font-size: 48px !important;
+  }
+}
+
+h2 {
+  font-size: 48px !important;
+  text-transform: uppercase;
+  font-family: "Space Grotesk", sans-serif;
+}
+
+h3 {
+  font-size: 24px;
+  text-transform: uppercase;
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 600;
+}
+
+p {
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 300;
+  font-size: 24px;
+}
+
+.container {
+  max-width: 1440px !important;
+}
+
+@media (min-width: 1024px) {
+  section {
+    margin-bottom: 5rem;
+  }
+}
+@media (max-width: 1023px) {
+  section {
+    margin-bottom: 3rem;
+  }
+}
+
+html {
+  max-width: 100%;
+  width: 100%;
+}
+
+.btn-gold {
+  background-color: #dba740;
+  padding: 0.5rem 0.8rem;
+  border: none;
+  transition: all 0.3s;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.btn-gold:hover {
+  background-color: #b0842c;
+}
+.btn-gold:hover a {
+  color: white !important;
+}
+.btn-gold a {
+  color: #1f2020 !important;
+}
+
+.btn-white {
+  background-color: white;
+  padding: 0.5rem 0.8rem;
+  border: none;
+  transition: all 0.3s;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.btn-white:hover {
+  background-color: #292a2a;
+}
+.btn-white:hover a {
+  color: white !important;
+}
+.btn-white a {
+  color: #1f2020 !important;
+}
+
+.topSection {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(/img/top_photo.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.topSection::before {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.75);
+  content: "";
+  position: absolute;
+}
+.topSection .navbar {
+  padding-top: 3rem;
+}
+.topSection .navbar-nav {
+  align-items: center;
+  gap: 3rem;
+}
+@media (max-width: 767px) {
+  .topSection .navbar-nav {
+    margin-top: 3rem;
+  }
+}
+.topSection .navbar-toggler {
+  border: white solid 1px !important;
+}
+.topSection .navbar-toggler-icon {
+  background-image: url(../img/hamburger.svg) !important;
+}
+.topSection .navbar .navbar-collapse {
+  align-items: center;
+  width: 100%;
+  justify-content: space-around;
+}
+@media (min-width: 769px) {
+  .topSection .navbar .navbar-collapse {
+    display: flex;
+  }
+}
+.topSection .navbar .navbar-collapse .nav-link {
+  color: white;
+  font-family: "Space Grotesk", sans-serif;
+  text-transform: uppercase;
+  font-size: 24px;
+  font-weight: 500;
+}
+.topSection img {
+  width: 325px;
+  width: 100%;
+}
+@media (max-width: 767px) {
+  .topSection img {
+    width: 200px !important;
+  }
+}
+.topSection .topText {
+  z-index: 1 !important;
+  position: relative;
+  text-align: center;
+  margin-top: 15%;
+}
+@media (max-width: 767px) {
+  .topSection .topText {
+    margin-top: 40%;
+  }
+}
+.topSection .topText h1 {
+  color: white;
+  margin-bottom: 2rem;
+}
+.topSection .topText button a {
+  font-family: "Space Grotesk", sans-serif;
+  text-transform: uppercase;
+  font-size: 24px;
+  font-weight: 500;
+  padding: 0.5rem 0.8rem;
+}/*# sourceMappingURL=topSection.css.map */

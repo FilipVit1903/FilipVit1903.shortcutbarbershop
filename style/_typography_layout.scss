@@ -1,0 +1,107 @@
+//fonty
+$space-grotesk: "Space Grotesk", sans-serif;
+$lexend: "Lexend Deca", sans-serif;
+
+//barvy
+$brand-gold: #dba740;
+$brand-gold-hover: #b0842c;
+
+$brand-black: #1f2020;
+$brand-black-hover: #292a2a;
+
+//typografie
+h1 {
+	font-size: 64px !important;
+	text-transform: uppercase;
+	font-family: $space-grotesk;
+	font-weight: 400 !important;
+
+	@media (max-width: 767px) {
+		font-size: 48px !important;
+	}
+}
+
+h2 {
+	font-size: 48px !important;
+	text-transform: uppercase;
+	font-family: $space-grotesk;
+}
+
+h3 {
+	font-size: 24px;
+	text-transform: uppercase;
+	font-family: $lexend;
+	font-weight: 600;
+}
+
+p {
+	font-family: $lexend;
+	font-weight: 300;
+	font-size: 24px;
+}
+
+* {
+}
+
+.container {
+	max-width: 1440px !important;
+}
+
+section {
+	@media (min-width: 1024px) {
+		margin-bottom: 5rem;
+	}
+
+	@media (max-width: 1023px) {
+		margin-bottom: 3rem;
+	}
+}
+
+html {
+	max-width: 100%;
+	width: 100%;
+}
+
+//button gold
+.btn-gold {
+	background-color: $brand-gold;
+	padding: 0.5rem 0.8rem;
+	border: none;
+	transition: all 0.3s;
+	text-transform: uppercase;
+	font-weight: 500;
+
+	&:hover {
+		background-color: $brand-gold-hover;
+
+		a {
+			color: white !important;
+		}
+	}
+
+	a {
+		color: $brand-black !important;
+	}
+}
+
+//button white
+.btn-white {
+	background-color: white;
+	padding: 0.5rem 0.8rem;
+	border: none;
+	transition: all 0.3s;
+	text-transform: uppercase;
+	font-weight: 500;
+
+	&:hover {
+		background-color: $brand-black-hover;
+
+		a {
+			color: white !important;
+		}
+	}
+
+	a {
+		color: $brand-black !important;
+	}
+}

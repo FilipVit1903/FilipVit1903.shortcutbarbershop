@@ -1,0 +1,155 @@
+h1 {
+  font-size: 64px !important;
+  text-transform: uppercase;
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 400 !important;
+}
+@media (max-width: 767px) {
+  h1 {
+    font-size: 48px !important;
+  }
+}
+
+h2 {
+  font-size: 48px !important;
+  text-transform: uppercase;
+  font-family: "Space Grotesk", sans-serif;
+}
+
+h3 {
+  font-size: 24px;
+  text-transform: uppercase;
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 600;
+}
+
+p {
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 300;
+  font-size: 24px;
+}
+
+.container {
+  max-width: 1440px !important;
+}
+
+@media (min-width: 1024px) {
+  section {
+    margin-bottom: 5rem;
+  }
+}
+@media (max-width: 1023px) {
+  section {
+    margin-bottom: 3rem;
+  }
+}
+
+html {
+  max-width: 100%;
+  width: 100%;
+}
+
+.btn-gold {
+  background-color: #dba740;
+  padding: 0.5rem 0.8rem;
+  border: none;
+  transition: all 0.3s;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.btn-gold:hover {
+  background-color: #b0842c;
+}
+.btn-gold:hover a {
+  color: white !important;
+}
+.btn-gold a {
+  color: #1f2020 !important;
+}
+
+.btn-white {
+  background-color: white;
+  padding: 0.5rem 0.8rem;
+  border: none;
+  transition: all 0.3s;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.btn-white:hover {
+  background-color: #292a2a;
+}
+.btn-white:hover a {
+  color: white !important;
+}
+.btn-white a {
+  color: #1f2020 !important;
+}
+
+.sluzby {
+  position: relative;
+}
+.sluzby::before {
+  content: "";
+  max-width: 230px;
+  width: 100%;
+  max-height: 250px;
+  height: 100%;
+  background-image: url(../img/nuzky.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  transform: rotate(90deg);
+  position: absolute;
+  top: 0;
+  left: -2rem;
+  opacity: 0.3;
+}
+.sluzby h2 {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+.sluzby .col {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+.sluzby .box {
+  width: 270px;
+  height: 270px;
+  background-color: #1f2020;
+  position: relative;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.sluzby .box::before {
+  content: "";
+  position: absolute;
+  width: 62px;
+  height: 62px;
+  background-image: url(../img/triangle.svg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  bottom: 0;
+  right: 0;
+}
+.sluzby .anotation {
+  max-width: 270px;
+  margin: auto;
+}
+.sluzby .anotation .price {
+  font-size: 34px;
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+.sluzby .anotation .service {
+  margin-bottom: 0.5rem;
+}
+.sluzby .anotation .description {
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+}/*# sourceMappingURL=sluzby.css.map */
