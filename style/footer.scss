@@ -1,1 +1,114 @@
 @import "_typography_layout";
+
+.footer--form {
+	background-image: url(../img/paralax_photo.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	margin-bottom: 0 !important;
+	position: relative;
+
+	&::before {
+		content: "";
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		background-color: rgba($color: #000000, $alpha: 0.7);
+		z-index: 0;
+	}
+
+	.container {
+		padding-top: 5rem;
+		padding-bottom: 3rem;
+		position: relative;
+		z-index: 1;
+
+		.row {
+			margin: auto;
+
+			.col-xl-6 {
+			}
+		}
+
+		h2 {
+			text-align: center;
+			color: $brand-gold;
+			margin-bottom: 2rem;
+		}
+
+		.form-group {
+			max-width: 800px;
+			width: 100%;
+			margin: auto;
+			margin-bottom: 6rem;
+
+			.text-area {
+				textarea {
+					min-height: 218px;
+					margin-bottom: 1.5rem;
+				}
+
+				button {
+					float: right;
+				}
+			}
+
+			input {
+				margin-bottom: 1.5rem;
+				height: 3.5rem;
+				position: relative;
+			}
+
+			input.form-control,
+			textarea.form-control {
+				background-color: rgb(15, 15, 15);
+				border-color: $brand-gold;
+				color: white;
+
+				&::placeholder {
+					position: absolute;
+					top: 1rem;
+					color: white !important;
+				}
+			}
+
+			.form-control:focus {
+				box-shadow: 0 0 0 0.25rem rgba($color: $brand-gold, $alpha: 0.5) !important;
+			}
+		}
+	}
+
+	.row--footer {
+		@media (max-width: 767px) {
+			flex-wrap: wrap-reverse;
+		}
+
+		h3 {
+			color: $brand-gold;
+		}
+		p {
+			color: white;
+			font-size: 20px;
+		}
+
+		.col-xl-3 {
+			margin-bottom: 1rem;
+		}
+
+		.socials {
+			a {
+				text-decoration: none;
+				color: white;
+				font-size: 20px;
+			}
+		}
+
+		.logo {
+			img {
+				max-width: 300px;
+				width: 100%;
+				opacity: 0.8;
+			}
+		}
+	}
+}

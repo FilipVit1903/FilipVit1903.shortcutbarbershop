@@ -137,6 +137,10 @@ html {
   text-transform: uppercase;
   font-size: 24px;
   font-weight: 500;
+  transition: 0.2s;
+}
+.topSection .navbar .navbar-collapse .nav-link:hover {
+  color: #dba740;
 }
 .topSection img {
   width: 325px;

@@ -87,70 +87,25 @@ html {
   padding: 0.5rem 0.8rem !important;
 }
 
-.aboutUs--row {
-  background-image: url(../img/about\ us\ 1.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-}
-@media (min-width: 767px) {
-  .aboutUs--row {
-    margin-bottom: 0 !important;
-  }
-}
-@media (min-width: 1024px) {
-  .aboutUs--row {
-    padding-top: 8rem;
-    padding-bottom: 8rem;
-  }
-}
-.aboutUs--row::before {
-  content: "";
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.8);
-  position: absolute;
-  top: 0;
-  z-index: 0;
-}
-.aboutUs--row .row {
-  justify-content: space-between;
-  align-items: center;
-  z-index: 1;
+.barbers {
   position: relative;
 }
-@media (max-width: 767px) {
-  .aboutUs--row .row .text {
-    text-align: center;
-  }
+.barbers h2 {
+  margin-bottom: 3rem;
+  text-align: center;
 }
-.aboutUs--row .row .text h2 {
-  color: #dba740;
-  margin-bottom: 2rem;
-}
-.aboutUs--row .row .text p {
-  color: white;
-}
-.aboutUs--row .row .text img {
-  float: right;
-}
-@media (max-width: 767px) {
-  .aboutUs--row .row .text img {
-    margin-bottom: 2rem;
-    max-width: 140px;
-    width: 100%;
-  }
-}
-.aboutUs--row .row .image {
+.barbers .persons {
   display: flex;
   justify-content: center;
+  gap: 10rem;
+  text-align: center;
 }
 @media (max-width: 767px) {
-  .aboutUs--row .row .image img {
-    max-width: 320px;
-    width: 100%;
+  .barbers .persons {
+    flex-direction: column;
+    gap: 3rem;
   }
-}/*# sourceMappingURL=aboutUs.css.map */
+}
+.barbers .persons img {
+  margin-bottom: 1rem;
+}/*# sourceMappingURL=barbers.css.map */

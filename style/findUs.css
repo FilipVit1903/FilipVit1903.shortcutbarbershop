@@ -85,4 +85,120 @@ html {
 .btn-white a {
   color: #1f2020 !important;
   padding: 0.5rem 0.8rem !important;
+}
+
+.findUs {
+  margin-bottom: 0 !important;
+}
+.findUs .container-fluid {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8rem;
+  justify-content: center;
+  width: 100%;
+  padding-inline: 0;
+}
+.findUs .container-fluid .row {
+  width: 100%;
+  align-items: center;
+}
+@media (max-width: 767px) {
+  .findUs .container-fluid .row {
+    flex-wrap: wrap-reverse;
+  }
+}
+.findUs .container-fluid .row .map {
+  padding-left: 0;
+  padding-right: 0;
+}
+.findUs .container-fluid .text--wrapper {
+  padding-inline: 3rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+@media (max-width: 767px) {
+  .findUs .container-fluid .text--wrapper {
+    margin-bottom: 2rem;
+    padding-inline: 0rem;
+  }
+}
+.findUs .container-fluid .text--wrapper h2 {
+  margin-bottom: 2rem;
+  margin-inline: auto;
+}
+@media (max-width: 767px) {
+  .findUs .container-fluid .text--wrapper h2 {
+    text-align: center;
+  }
+}
+.findUs .container-fluid .text--wrapper p {
+  font-size: 16px !important;
+}
+.findUs .container-fluid .text--wrapper .informations {
+  display: flex;
+  align-items: center !important;
+  gap: 1rem;
+  margin-inline: auto !important;
+}
+@media (min-width: 767px) and (max-width: 1060px) {
+  .findUs .container-fluid .text--wrapper .informations {
+    flex-direction: column;
+  }
+}
+@media (min-width: 1060px) {
+  .findUs .container-fluid .text--wrapper .informations {
+    gap: 5rem;
+  }
+}
+@media (max-width: 767px) {
+  .findUs .container-fluid .text--wrapper .informations {
+    justify-content: center;
+  }
+}
+.findUs .container-fluid .text--wrapper .informations .contacts {
+  display: flex;
+  flex-direction: column;
+}
+.findUs .container-fluid .text--wrapper .informations .contacts a {
+  text-decoration: none;
+  color: #1f2020;
+  position: relative;
+  padding-left: 2.5rem;
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 16px;
+}
+.findUs .container-fluid .text--wrapper .informations .contacts a:hover {
+  text-decoration: underline;
+}
+.findUs .container-fluid .text--wrapper .informations .contacts a#phone {
+  margin-bottom: 1.4rem;
+}
+.findUs .container-fluid .text--wrapper .informations .contacts a#phone::before {
+  content: "";
+  background-image: url(../img/phone.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  border-radius: 50%;
+  background-color: #1f2020;
+  width: 2rem;
+  height: 2rem;
+  left: 0;
+}
+.findUs .container-fluid .text--wrapper .informations .contacts a#mail::before {
+  content: "";
+  background-image: url(../img/mail.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  border-radius: 50%;
+  background-color: #1f2020;
+  width: 2rem;
+  height: 2rem;
+  left: 0;
+}
+.findUs .place-card {
+  display: none !important;
 }/*# sourceMappingURL=findUs.css.map */

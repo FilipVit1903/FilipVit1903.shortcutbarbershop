@@ -1,0 +1,26 @@
+@import "_typography_layout";
+
+.barbers {
+	position: relative;
+
+	h2 {
+		margin-bottom: 3rem;
+		text-align: center;
+	}
+
+	.persons {
+		display: flex;
+		justify-content: center;
+		gap: 10rem;
+		text-align: center;
+
+		@media (max-width: 767px) {
+			flex-direction: column;
+			gap: 3rem;
+		}
+
+		img {
+			margin-bottom: 1rem;
+		}
+	}
+}
