@@ -1,1 +1,74 @@
 @import "_typography_layout";
+
+.reservationRow {
+	background-image: url(../img/paralax_photo.jpg);
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	padding-top: 3rem;
+	padding-bottom: 3rem;
+
+	@media (min-width: 1024px) {
+		padding-top: 8rem;
+		padding-bottom: 8rem;
+	}
+
+	&::before {
+		content: "";
+		width: 100%;
+		height: 100%;
+		background-color: rgba($color: #000000, $alpha: 0.6);
+		position: absolute;
+		top: 0;
+		z-index: 0;
+	}
+
+	.row {
+		justify-content: space-between;
+		align-items: center;
+		z-index: 1;
+		position: relative;
+	}
+
+	//text left
+	.text {
+		@media (max-width: 1024px) {
+			margin-bottom: 4rem;
+		}
+
+		@media (max-width: 767px) {
+			text-align: center;
+		}
+		h2 {
+			color: $brand-gold;
+			margin-bottom: 2rem;
+		}
+
+		p {
+			color: white;
+
+			@media (min-width: 1024px) {
+				padding-right: 3rem;
+			}
+		}
+	}
+
+	//btns right
+	.buttons {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+		@media (min-width: 1024px) {
+			margin-top: 3rem;
+		}
+
+		button {
+			max-width: 270px;
+			width: 100%;
+			margin-bottom: 2rem;
+		}
+	}
+}

@@ -51,7 +51,7 @@ html {
 
 .btn-gold {
   background-color: #dba740;
-  padding: 0.5rem 0.8rem;
+  padding: 0.5rem 0.8rem !important;
   border: none;
   transition: all 0.3s;
   text-transform: uppercase;
@@ -65,6 +65,7 @@ html {
 }
 .btn-gold a {
   color: #1f2020 !important;
+  padding: 0.5rem 0.8rem !important;
 }
 
 .btn-white {
@@ -83,4 +84,74 @@ html {
 }
 .btn-white a {
   color: #1f2020 !important;
+  padding: 0.5rem 0.8rem !important;
+}
+
+.reservationRow {
+  background-image: url(../img/paralax_photo.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+@media (min-width: 1024px) {
+  .reservationRow {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+  }
+}
+.reservationRow::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  top: 0;
+  z-index: 0;
+}
+.reservationRow .row {
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1;
+  position: relative;
+}
+@media (max-width: 1024px) {
+  .reservationRow .text {
+    margin-bottom: 4rem;
+  }
+}
+@media (max-width: 767px) {
+  .reservationRow .text {
+    text-align: center;
+  }
+}
+.reservationRow .text h2 {
+  color: #dba740;
+  margin-bottom: 2rem;
+}
+.reservationRow .text p {
+  color: white;
+}
+@media (min-width: 1024px) {
+  .reservationRow .text p {
+    padding-right: 3rem;
+  }
+}
+.reservationRow .buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (min-width: 1024px) {
+  .reservationRow .buttons {
+    margin-top: 3rem;
+  }
+}
+.reservationRow .buttons button {
+  max-width: 270px;
+  width: 100%;
+  margin-bottom: 2rem;
 }/*# sourceMappingURL=reservationRow.css.map */
